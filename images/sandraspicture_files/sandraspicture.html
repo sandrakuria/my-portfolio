@@ -1,0 +1,1296 @@
+
+<!DOCTYPE html>
+<html data-ng-app="ngBoilerplate" data-ng-controller="AppCtrl" lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    <meta charset="utf-8">
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KQRN64W');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"152a29bc4d","applicationID":"5878141","transactionName":"NlIDZ0dYV0UHWkNYXA8YLGV2FntaCV5nXkAVdA5dQUtWWgpcRR5xDVgGY1pKTQ==","queueTime":0,"applicationTime":127,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQMDUVBUGwYIU1lTAwA=",licenseKey:"152a29bc4d",applicationID:"5878141"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
+
+
+    <title>10 tech trends that will impact social justice in 2018 / Ford Foundation</title>
+    <!--Standard meta-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--/.Standard meta-->
+    <!--Twitter large summary card-->
+        <meta name="twitter:image" content="https://www.fordfoundation.org/media/3755/gettyimages-124721844_retouched.jpg?crop=0,0,0.3,0&width=560&height=300&rnd=131661143550000000&cropmode=percentage">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="www.fordfoundation.org">
+    <meta name="twitter:site" content="@FordFoundation">
+    <meta name="twitter:creator" content="@FordFoundation">
+
+    
+        <meta name="twitter:description" content="@FordFoundation outlines 10 tech trends that will impact social justice in 2018">
+
+    <meta name="twitter:title" content="10 tech trends that will impact social justice in 2018">
+    <!--/.Twitter-->
+    <!--OpenGraph-->
+    <meta property="og:title" content="10 tech trends that will impact social justice in 2018">
+    <meta property="og:type" content="blog">
+    <meta property="og:site_name" content="Ford Foundation">
+    <meta property="og:url" content="https://www.fordfoundation.org/ideas/equals-change-blog/posts/10-tech-trends-that-will-impact-social-justice-in-2018/">
+        <meta property="og:image" content="https://www.fordfoundation.org/media/3755/gettyimages-124721844_retouched.jpg?crop=0,0,0.3,0&width=560&height=300&rnd=131661143550000000&cropmode=percentage">
+        <meta property="og:image:width" content="280">
+        <meta property="og:image:height" content="150">
+
+        <meta name="description" content="10 tech trends that will impact social justice in 2018">
+        <meta property="og:description" content="10 tech trends that will impact social justice in 2018">
+
+    <!--/.End OpenGraph-->
+    <!--Canonical URLS-->
+    
+    <link rel="canonical" href="https://www.fordfoundation.org/ideas/equals-change-blog/posts/10-tech-trends-that-will-impact-social-justice-in-2018/" />
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/device-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/device-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/device-icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/device-icons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/device-icons/safari-pinned-tab.svg" color="#009FD4">
+    <meta name="msapplication-TileColor" content="#009FD4">
+    <meta name="theme-color" content="#009FD4">
+
+    
+
+    <!--[if IE 9]>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link rel="stylesheet" type="text/css" href="/css/ie9.css">
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/respond/dest/respond.min.js"></script>
+
+    
+    <style id="accessibility"></style>
+
+    <link rel="search" type="application/opensearchdescription+xml" href="/content-search.xml" title="Search FordFoundation" />
+
+
+    <link href="/DependencyHandler.axd?s=L2Nzcy9oYW1idXJnZXJzLm1pbi5jc3M7L2Nzcy9tYWluLmNzczs&amp;t=Css&amp;cdv=5022019" type="text/css" rel="stylesheet"/>
+    
+                    <meta name="blog:author" content="Wilneida Negr&#243;n">
+
+    
+                    <meta name="blog:thematic-area" content="Technology and Society">
+
+                    <meta name="blog:topic" content="Internet and Technology">
+                <meta name="blog:topic" content="Human Rights">
+
+
+</head>
+<body data-template="BlogPost" data-spy="scroll" data-target="#submenu">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQRN64W"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1219902648072939');
+        fbq('track', "PageView");
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1219902648072939&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+        <input type="hidden" value="ipaddress:" />
+        <input type="hidden" value="Error:" />
+
+
+
+
+    <header class="primary-nav">
+        
+        <a href="#main-content" class="main-content-link btn" aria-label="Skip To Main Content" tabindex="1" target="_self">Skip to main content</a>
+
+        <nav class="navbar navbar-default sixitems">
+    <div class="container-fluid" id="navbar-wrapper">
+        <div class="navbar-header container-fluid">
+            <a class="navbar-brand" href="/" tabindex="1" aria-label="Home">
+                <span class="sr-only">Home</span>
+            </a>
+            <button title="Expand Mobile Menu" id="hamburger-btn" class="hamburger hamburger--slider js-hamburger visible-xs" type="button" aria-expanded="false">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="navigation-items container-fluid">
+            <ul class="list-inline list-unstyled" role="menubar">
+                        <li class="dropdown-btn" role="menuitem">
+                            <a href="javascript:void(0)" id="work-collapse-btn" data-toggle="dropdown"
+                               data-target="#work-collapse" aria-expanded="false" class="menu-anchor  " data-ng-click="closeMenu($event); openMenu($event)">Work</a>
+                        </li>
+                        <li class="dropdown-btn" role="menuitem">
+                            <a href="javascript:void(0)" id="worldwide-collapse-btn" data-toggle="dropdown"
+                               data-target="#worldwide-collapse" aria-expanded="false" class="menu-anchor  " data-ng-click="closeMenu($event); openMenu($event)">Worldwide</a>
+                        </li>
+                            <li class="dropdown-btn" role="menuitem">
+                                <a href="/work/learning/" id="learning-collapse-btn" class="menu-anchor  " data-ng-click="closeMenu($event); openMenu($event)">Learning</a>
+                            </li>
+                        <li class="dropdown-btn" role="menuitem">
+                            <a href="javascript:void(0)" id="ideas-collapse-btn" data-toggle="dropdown"
+                               data-target="#ideas-collapse" aria-expanded="false" class="menu-anchor  active" data-ng-click="closeMenu($event); openMenu($event)">Ideas</a>
+                        </li>
+                        <li class="dropdown-btn" role="menuitem">
+                            <a href="javascript:void(0)" id="about-collapse-btn" data-toggle="dropdown"
+                               data-target="#about-collapse" aria-expanded="false" class="menu-anchor  " data-ng-click="closeMenu($event); openMenu($event)">About</a>
+                        </li>
+                        <li class="dropdown-btn search" role="menuitem">
+                            <a href="javascript:void(0)" id="search-collapse-btn" data-toggle="dropdown"
+                               data-target="#search-collapse" data-ng-click="closeMenu($event); openMenu($event)"
+                               class="icon-search menu-anchor last  hidden-xs" aria-expanded="false" aria-label="Search"><span class="sr-only">Search</span></a>
+                            <form method="GET" action="/search/" class="form-inline visible-xs">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="q-xs" name="q" aria-label="Enter search terms" placeholder="Enter search terms" />
+                                    <input type="hidden" id="p-xs" name="p" value="0" />
+                                </div>
+                                <span class="input-group-btn">
+                                    <button class="btn icon-search" type="submit" id="searchButton-xs" aria-label="Search"></button>
+                                </span>
+                            </form>
+                        </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="absolute">
+    <div class="container-fluid" id="menu-panels">
+    <div class="collapse" id="work-collapse">
+        <div class="backdrop" data-ng-click="closeMenu($event)"></div>
+        <div class="mega-menu padding-bottomx2">
+                        <div class="menu-item">
+                <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-md-6">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/work/challenging-inequality/">Challenging inequality</a>
+</div>
+    
+
+
+    
+      <div class="row">
+    <div class="col-sm-6">
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5324/icon-cs.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/cities-and-states/" tabindex="0">Cities and States</a>
+                </div>
+            </div>
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5325/icon-ceg.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/civic-engagement-and-government/" tabindex="0">Civic Engagement and Government</a>
+                </div>
+            </div>
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5326/icon-cfe.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/creativity-and-free-expression/" tabindex="0">Creativity and Free Expression</a>
+                </div>
+            </div>
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5327/icon-fow.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/future-of-work-ers/" tabindex="0">Future of Work(ers)</a>
+                </div>
+            </div>
+</div><div class="col-sm-6">            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5329/icon-grej.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/gender-racial-and-ethnic-justice/" tabindex="0">Gender, Racial, and Ethnic Justice</a>
+                </div>
+            </div>
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5330/icon-nrcc.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/natural-resources-and-climate-change/" tabindex="0">Natural Resources and Climate Change</a>
+                </div>
+            </div>
+            <div class="menu-subtitle challenge">
+                <div class="img-circle" style="background-image: url('/media/5331/icon-ts.png')"></div>
+                <div class="challenge-link">
+                    <a href="/work/challenging-inequality/technology-and-society/" tabindex="0">Technology and Society</a>
+                </div>
+            </div>
+    </div>
+</div>
+    
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/work/our-grants/">Our grants</a>
+</div>
+    
+
+
+    
+      <div class="row">
+        <div class="col-sm-12">
+                <div class="menu-subtitle">
+                    <a href="/work/our-grants/grants-database/" target="_self">Grants Database</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/work/our-grants/justfilms/" target="_self">JustFilms</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/work/our-grants/idea-submission/" target="_self">Idea Submission</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/work/our-grants/building-institutions-and-networks/" target="_self">BUILD Program</a>
+                </div>
+        </div>
+</div>
+    
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/work/mission-investments/">Mission Investments</a>
+</div>
+    
+<p><span>We’re leveraging capital markets to create lasting change.</span></p>
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/work/investing-in-individuals/">Investing in Individuals</a>
+</div>
+    
+
+
+    
+      <div class="row">
+        <div class="col-sm-12">
+                <div class="menu-subtitle">
+                    <a href="/work/investing-in-individuals/the-ford-global-fellowship/" target="_self">The Ford Global Fellowship</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/work/investing-in-individuals/international-fellowships-program/" target="_self">International Fellowships Program</a>
+                </div>
+        </div>
+</div>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="collapse" id="worldwide-collapse">
+        <div class="backdrop" data-ng-click="closeMenu($event)"></div>
+        <div class="mega-menu padding-bottomx2">
+                        <div class="menu-item">
+                <div class="row">
+                        <div class="col-xs-12">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/our-work-around-the-world/">Our work around the world</a>
+</div>
+    
+
+
+    
+      <div class="map-holder">
+    <div class="col-sm-5 bkg-purple map" aria-hidden="true">
+        <img src="/assets/img/map_nav.png" alt="Regions Map" tabindex="-1">
+
+            <a href="/our-work-around-the-world/andean-region/" tabindex="-1">
+                <span class="region-hover pin r0 andean-region"></span>
+                <span class="sr-only">Andean Region</span>
+            </a>
+            <a href="/our-work-around-the-world/brazil/" tabindex="-1">
+                <span class="region-hover pin r1 brazil"></span>
+                <span class="sr-only">Brazil</span>
+            </a>
+            <a href="/our-work-around-the-world/china/" tabindex="-1">
+                <span class="region-hover pin r2 china"></span>
+                <span class="sr-only">China</span>
+            </a>
+            <a href="/our-work-around-the-world/eastern-africa/" tabindex="-1">
+                <span class="region-hover pin r3 eastern-africa"></span>
+                <span class="sr-only">Eastern Africa</span>
+            </a>
+            <a href="/our-work-around-the-world/india-nepal-and-sri-lanka/" tabindex="-1">
+                <span class="region-hover pin r4 india-nepal-and-sri-lanka"></span>
+                <span class="sr-only">India, Nepal, and Sri Lanka</span>
+            </a>
+            <a href="/our-work-around-the-world/indonesia/" tabindex="-1">
+                <span class="region-hover pin r5 indonesia"></span>
+                <span class="sr-only">Indonesia</span>
+            </a>
+            <a href="/our-work-around-the-world/mexico-and-central-america/" tabindex="-1">
+                <span class="region-hover pin r6 mexico-and-central-america"></span>
+                <span class="sr-only">Mexico and Central America</span>
+            </a>
+            <a href="/our-work-around-the-world/middle-east-and-north-africa/" tabindex="-1">
+                <span class="region-hover pin r7 middle-east-and-north-africa"></span>
+                <span class="sr-only">Middle East and North Africa</span>
+            </a>
+            <a href="/our-work-around-the-world/southern-africa/" tabindex="-1">
+                <span class="region-hover pin r8 southern-africa"></span>
+                <span class="sr-only">Southern Africa</span>
+            </a>
+            <a href="/our-work-around-the-world/united-states/" tabindex="-1">
+                <span class="region-hover pin r9 united-states"></span>
+                <span class="sr-only">United States</span>
+            </a>
+            <a href="/our-work-around-the-world/west-africa/" tabindex="-1">
+                <span class="region-hover pin r10 west-africa"></span>
+                <span class="sr-only">West Africa</span>
+            </a>
+    </div>
+    <div class="col-sm-6 col-sm-offset-1 map-list no-padding">
+        <div class="row">
+
+
+
+            <div class="col-xs-6"><ul class="list-unstyled">
+
+                <li class="menu-subtitle regions map-link r0">
+                    <a href="/our-work-around-the-world/andean-region/" tabindex="0">Andean Region</a>
+                </li>
+                <li class="menu-subtitle regions map-link r1">
+                    <a href="/our-work-around-the-world/brazil/" tabindex="0">Brazil</a>
+                </li>
+                <li class="menu-subtitle regions map-link r2">
+                    <a href="/our-work-around-the-world/china/" tabindex="0">China</a>
+                </li>
+                <li class="menu-subtitle regions map-link r3">
+                    <a href="/our-work-around-the-world/eastern-africa/" tabindex="0">Eastern Africa</a>
+                </li>
+                <li class="menu-subtitle regions map-link r4">
+                    <a href="/our-work-around-the-world/india-nepal-and-sri-lanka/" tabindex="0">India, Nepal, and Sri Lanka</a>
+                </li>
+                <li class="menu-subtitle regions map-link r5">
+                    <a href="/our-work-around-the-world/indonesia/" tabindex="0">Indonesia</a>
+                </li>
+</ul></div><div class="col-xs-6"><ul class="list-unstyled">                <li class="menu-subtitle regions map-link r6">
+                    <a href="/our-work-around-the-world/mexico-and-central-america/" tabindex="0">Mexico and Central America</a>
+                </li>
+                <li class="menu-subtitle regions map-link r7">
+                    <a href="/our-work-around-the-world/middle-east-and-north-africa/" tabindex="0">Middle East and North Africa</a>
+                </li>
+                <li class="menu-subtitle regions map-link r8">
+                    <a href="/our-work-around-the-world/southern-africa/" tabindex="0">Southern Africa</a>
+                </li>
+                <li class="menu-subtitle regions map-link r9">
+                    <a href="/our-work-around-the-world/united-states/" tabindex="0">United States</a>
+                </li>
+                <li class="menu-subtitle regions map-link r10">
+                    <a href="/our-work-around-the-world/west-africa/" tabindex="0">West Africa</a>
+                </li>
+            </ul></div>
+        </div>
+    </div>
+</div>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="collapse" id="ideas-collapse">
+        <div class="backdrop" data-ng-click="closeMenu($event)"></div>
+        <div class="mega-menu padding-bottomx2">
+                        <div class="menu-item">
+                <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/ideas/ford-forum/">Ford Forum</a>
+</div>
+    
+
+
+    
+      <div class="row no-margin bkg-darkblue forum-wrapper">
+
+
+    <div class="col-lg-6 no-padding forum-child" style="background-image: url(/media/5063/wag-homepage-hero.jpg?crop=0.35,0,0.15,0&width=350&height=350&rnd=132277489490000000&cropmode=percentage)" data-src-retina="/media/5063/wag-homepage-hero.jpg?crop=0.35,0,0.15,0&width=350&height=350&rnd=132277489490000000&cropmode=percentage"></div>
+
+    <div class="col-lg-6 col-sm-12 no-padding">
+        <div class="menu-forum-text">
+            <p class="date opacity-mid"><time itemprop="datePublished" datetime="2020-03-04">4 March 2020</time></p>
+            <div class="forum-title margin-topx2"><a href="/ideas/ford-forum/the-future-is-hers/" tabindex="0"><p>The Future Is Hers</p></a></div>
+        </div>
+    </div>
+
+</div>
+    
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/ideas/equals-change-blog/">Equals Change Blog</a>
+</div>
+    
+
+
+    
+      <div class="row">
+    <div class="col-md-6 margin-bottomx2">
+        <div class="row">
+            <div class="col-xs-3 image-full">
+
+                        <a href="/ideas/equals-change-blog/by-author/all-posts-by/?AuthorId=10773" title="Posts by Farai  Chideya" aria-label="Posts by Farai  Chideya">
+                            <img itemprop="image" class="img-circle" alt="Farai Chieda. New York, 2018. Photo credit: Simon Luethi" title="Farai Chieda. New York, 2018. Photo credit: Simon Luethi" src="/media/3677/1711_fordfoundation_13_faraichideya_070-select1_retouchedsidesextended.jpg?crop=0.2742857142857143,0,0.29714285714285715,0&amp;width=100&amp;height=100&amp;rnd=131735487150000000&amp;cropmode=percentage" data-src-retina="/media/3677/1711_fordfoundation_13_faraichideya_070-select1_retouchedsidesextended.jpg?crop=0.2742857142857143,0,0.29714285714285715,0&amp;width=200&amp;height=200&amp;rnd=131735487150000000&amp;cropmode=percentage" />
+
+                        </a>
+            </div>
+            <div class="col-xs-9">
+                <p class="date opacity-high"><time itemprop="datePublished" datetime="2020-07-09">9 July 2020</time></p>
+                <p class="article-title">
+                    <a href="/ideas/equals-change-blog/posts/reconstructing-american-news/" tabindex="0">Reconstructing American News</a>
+                </p>
+                <p class="author opacity-high">
+                    By                         <a href="/ideas/equals-change-blog/by-author/all-posts-by/?AuthorId=10773" title="Posts by Farai  Chideya" aria-label="Posts by Farai  Chideya">
+                            Farai  Chideya
+                        </a>
+                </p>
+            </div>
+        </div>
+    </div>    
+    <div class="col-md-6 margin-bottomx2">
+        <div class="row">
+            <div class="col-xs-3 image-full">
+
+<img itemprop="image" class="img-circle" alt="White Ford Foundation logo against a light blue background" title="White Ford Foundation logo against a light blue background" src="/media/5353/ff-default-share.jpg?crop=0.31470703124999938,0,0.3102929687500014,0.0000000000000019895196601283&amp;width=100&amp;height=100&amp;rnd=132385463710000000&amp;cropmode=percentage" data-src-retina="/media/5353/ff-default-share.jpg?crop=0.31470703124999938,0,0.3102929687500014,0.0000000000000019895196601283&amp;width=200&amp;height=200&amp;rnd=132385463710000000&amp;cropmode=percentage" />
+            </div>
+            <div class="col-xs-9">
+                <p class="date opacity-high"><time itemprop="datePublished" datetime="2020-06-25">25 June 2020</time></p>
+                <p class="article-title">
+                    <a href="/ideas/equals-change-blog/posts/why-the-future-of-abortion-rights-in-america-rests-with-louisiana/" tabindex="0">Why the future of abortion rights in America rests with Louisiana</a>
+                </p>
+                <p class="author opacity-high">
+                    By Ford Foundation                </p>
+            </div>
+        </div>
+    </div>    
+        </div>
+        <div class="row">
+    <div class="col-md-6 margin-bottomx2">
+        <div class="row">
+            <div class="col-xs-3 image-full">
+
+<img itemprop="image" class="img-circle" alt="White Ford Foundation logo against a light blue background" title="White Ford Foundation logo against a light blue background" src="/media/5353/ff-default-share.jpg?crop=0.31470703124999938,0,0.3102929687500014,0.0000000000000019895196601283&amp;width=100&amp;height=100&amp;rnd=132385463710000000&amp;cropmode=percentage" data-src-retina="/media/5353/ff-default-share.jpg?crop=0.31470703124999938,0,0.3102929687500014,0.0000000000000019895196601283&amp;width=200&amp;height=200&amp;rnd=132385463710000000&amp;cropmode=percentage" />
+            </div>
+            <div class="col-xs-9">
+                <p class="date opacity-high"><time itemprop="datePublished" datetime="2020-06-25">25 June 2020</time></p>
+                <p class="article-title">
+                    <a href="/ideas/equals-change-blog/posts/building-a-united-dream/" tabindex="0">Building a United Dream</a>
+                </p>
+                <p class="author opacity-high">
+                    By Ford Foundation                </p>
+            </div>
+        </div>
+    </div>    
+    <div class="col-md-6 margin-bottomx2">
+        <div class="row">
+            <div class="col-xs-3 image-full">
+
+                        <a href="/ideas/equals-change-blog/by-author/all-posts-by/?AuthorId=9622" title="Posts by Tanya Coke" aria-label="Posts by Tanya Coke">
+                            <img itemprop="image" class="img-circle" alt="Tanya Coke, New York 2016. Photo Credit: Simon Luethi &#169;Ford Foundation." title="Tanya Coke, New York 2016. Photo Credit: Simon Luethi &#169;Ford Foundation." src="/media/3008/tanya-coke_web.jpg?crop=0.32281391128757148,0.0045024763619990948,0.3224455268579543,0.0950022512381819&amp;width=100&amp;height=100&amp;rnd=131735487200000000&amp;cropmode=percentage" data-src-retina="/media/3008/tanya-coke_web.jpg?crop=0.32281391128757148,0.0045024763619990948,0.3224455268579543,0.0950022512381819&amp;width=200&amp;height=200&amp;rnd=131735487200000000&amp;cropmode=percentage" />
+
+                        </a>
+            </div>
+            <div class="col-xs-9">
+                <p class="date opacity-high"><time itemprop="datePublished" datetime="2020-06-19">19 June 2020</time></p>
+                <p class="article-title">
+                    <a href="/ideas/equals-change-blog/posts/a-moment-of-reckoning-and-reflection-in-the-global-fight-for-racial-equality/" tabindex="0">A moment of reckoning and reflection in the global fight for racial equality</a>
+                </p>
+                <p class="author opacity-high">
+                    By                         <a href="/ideas/equals-change-blog/by-author/all-posts-by/?AuthorId=9622" title="Posts by Tanya Coke" aria-label="Posts by Tanya Coke">
+                            Tanya Coke
+                        </a>
+                </p>
+            </div>
+        </div>
+    </div>    
+        </div>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="collapse" id="about-collapse">
+        <div class="backdrop" data-ng-click="closeMenu($event)"></div>
+        <div class="mega-menu padding-bottomx2">
+                        <div class="menu-item">
+                <div class="row">
+                        <div class="col-sm-4">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/about/about-ford/">About us</a>
+</div>
+    
+
+
+    
+      <div class="row">
+        <div class="col-sm-12">
+                <div class="menu-subtitle">
+                    <a href="/about/about-ford/a-legacy-of-social-justice/" target="_self">A legacy of social justice</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/about/about-ford/mission/" target="_self">Mission</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/about/about-ford/our-origins/" target="_self">Our origins</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/about/people/diversity-equity-and-inclusion/" target="_self">Diversity, equity, and inclusion</a>
+                </div>
+                <div class="menu-subtitle">
+                    <a href="/about/about-ford/disability-inclusion/" target="_self">Disability inclusion</a>
+                </div>
+        </div>
+</div>
+    
+                        </div>
+                        <div class="col-sm-4">
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/about/people/">People</a>
+</div>
+    
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/about/careers/">Careers</a>
+</div>
+    
+
+
+    
+      <div class="menu-title margin-topx2">
+    <a href="/about/library/">Library</a>
+</div>
+    
+                        </div>
+                        <div class="col-sm-4">
+
+
+    
+      <div class="cfsj-wrapper">
+    <div class="cfsj-primary menu-title">
+            <a href="/about/the-ford-foundation-center-for-social-justice/">Ford Foundation Center for Social Justice</a>
+                    <div class="menu-subtitle"><a href="/about/the-ford-foundation-center-for-social-justice/event-spaces/">Book event space</a></div>
+    </div>
+</div>
+    
+
+
+    
+      <div class="cfsj-wrapper no-margin">
+    <div class="row no-margin cfsj-secondary">
+        <div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+            <div class="cfsj-secondary-text">
+                    <div class="menu-subtitle"><a href="/about/the-ford-foundation-center-for-social-justice/ford-foundation-gallery/">Ford Foundation Gallery</a></div>
+                                            </div>
+        </div>
+    </div>
+</div>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="collapse" id="search-collapse">
+        <div class="backdrop" data-ng-click="closeMenu($event)"></div>
+        <div class="mega-menu padding-bottomx2">
+                        <div class="menu-item">
+                <div class="row">
+                        <div class="col-xs-12">
+
+
+    
+      <div class="row padding-bottomx6 padding-topx6">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+        <div class="input-group search-bar" role="search">
+            <form method="GET" action="/search/">
+                <div class="row">
+                    <div class="col-md-10 col-sm-10 col-xs-9">
+                        <input type="text" class="form-control" id="q" name="q" aria-label="Enter search terms" placeholder="Enter search terms"/>
+                        <input type="hidden" id="p" name="p" value="0"/>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary " type="submit" id="searchButton">Search</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+    </header>
+
+    
+
+
+
+<script async src="//platform.twitter.com/widgets.js"></script>
+
+<div class="hero-image-medium">
+
+
+
+<a title="Judges attend Disrupt Hackathon SF 2011 held at the San Francisco Design Center Concourse on September 11, 2011 in San Francisco, California. Photo by Araya Diaz">
+	<div class="hero-full-inner hero-post" style="background-image: url(/media/3755/gettyimages-124721844_retouched.jpg?crop=0,0,0,0&width=1600&height=600&rnd=131661143550000000&cropmode=percentage)" data-src-retina="/media/3755/gettyimages-124721844_retouched.jpg?crop=0,0,0,0&width=3200&height=1200&rnd=131661143550000000&cropmode=percentage"></div>
+	
+</a>
+<div class="hero-text-post padding-topx6"></div>
+
+
+</div>
+<article class="blog-post-detail" aria-labelledby="page-title">
+
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "10 tech trends that will impact social justice in 2018",
+    "name": "10 tech trends that will impact social justice in 2018",
+    "image": [
+    "https://www.fordfoundation.org/media/3755/gettyimages-124721844_retouched.jpg?crop=0.05,0,0.2,0&amp;width=1600&amp;height=800&amp;rnd=131661143550000000&amp;cropmode=percentage"
+    ],
+    "datePublished": "3/21/2018",
+    "author": {
+    "@type": "Person",
+    "name": "Wilneida Negr&#243;n"
+    },
+    "publisher": {"@type": "Organization", "name": "Ford Foundation","logo": {"@type": "ImageObject","url": "https://www.fordfoundation.org/assets/img/ford-logo_265.png"}}
+    ,
+    "description": "10&#160;pressing tech issues and trends that exist at the nexus of technology and social justice."
+    }
+</script>
+    <div class="blog-post-header">
+<div class="social-container padding-topx2 container-fluid">
+
+<div class="social-wrapper">
+    <ul class="list-unstyled list-inline ">
+        <li class="social-media-li"><a href="//www.twitter.com/intent/tweet?url=https%3a%2f%2fwww.fordfoundation.org%2fideas%2fequals-change-blog%2fposts%2f10-tech-trends-that-will-impact-social-justice-in-2018%2f&amp;text=%40FordFoundation%20outlines%2010%20tech%20trends%20that%20will%20impact%20social%20justice%20in%202018" data-ng-href="{{$root.socialLinks.twitter}}" title="Share on Twitter" target="_blank" class="social-media-link  twitter">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>Twitter</title>
+        <g class="icon">
+            <g class="twitter">
+                <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm8,13c0,.16,0,.33,0,.49a10.9,10.9,0,0,1-11,11,10.75,10.75,0,0,1-5.89-1.74,6.9,6.9,0,0,0,.92.05,7.72,7.72,0,0,0,4.79-1.65,3.84,3.84,0,0,1-3.6-2.68,3.55,3.55,0,0,0,.73.08,3.73,3.73,0,0,0,1-.14,3.85,3.85,0,0,1-3.09-3.78v0a3.8,3.8,0,0,0,1.74.48A3.84,3.84,0,0,1,12,15.8a3.88,3.88,0,0,1,.52-1.94,10.92,10.92,0,0,0,8,4,3.65,3.65,0,0,1-.1-.88,3.86,3.86,0,0,1,3.85-3.86A3.8,3.8,0,0,1,27,14.38a8,8,0,0,0,2.45-.94,3.89,3.89,0,0,1-1.7,2.14A8.09,8.09,0,0,0,30,15,8.15,8.15,0,0,1,28,17Z" />
+            </g>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a></li>
+            <li class="social-media-li"><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.fordfoundation.org%2fideas%2fequals-change-blog%2fposts%2f10-tech-trends-that-will-impact-social-justice-in-2018%2f" data-ng-href="{{$root.socialLinks.facebook}}" title="Share on Facebook" target="_blank" class="social-media-link facebook">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>Facebook</title>
+        <g class="icon">
+            <g class="facebook">
+                <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm4.6,16.7h-4V31.3h-4V20.7H13.8V16.9h2.8V13.6c0-2.6,1.7-4.9,5.5-4.9a18.76,18.76,0,0,1,2.7.2l-.1,3.6H22.3c-1.4,0-1.6.6-1.6,1.7V17h4.2Z"></path>
+            </g>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a></li>
+            <li class="social-media-li"><a href="//www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.fordfoundation.org%2fideas%2fequals-change-blog%2fposts%2f10-tech-trends-that-will-impact-social-justice-in-2018%2f&amp;title=Ford%20Foundation%27s%20Tech%20Fellow%20Wilneida%20Negron%20outlines%2010%20tech%20trends%20that%20will%20impact%20social%20justice%20in%202018&amp;summary=10%20tech%20trends%20that%20will%20impact%20social%20justice%20in%202018" data-ng-href="{{$root.socialLinks.linkedin}}" title="Share on LinkedIn" target="_blank" class="social-media-link linkedin">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>LinkedIn</title>
+        <g class="icon linkedin">
+            <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4ZM15.7,28.3H11.5V15.8h4.2ZM13.6,14a2.18,2.18,0,0,1-2.3-2.2,2.21,2.21,0,0,1,2.4-2.2A2.13,2.13,0,0,1,16,11.8,2.16,2.16,0,0,1,13.6,14ZM30.7,28.3H26.5V21.6c0-1.7-.6-2.8-2.1-2.8a2.33,2.33,0,0,0-2.1,1.5,3.08,3.08,0,0,0-.1,1v7H18s.1-11.3,0-12.5h4.2v1.8A4.09,4.09,0,0,1,26,15.5c2.7,0,4.8,1.8,4.8,5.6Z"></path>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a></li>
+    </ul>
+</div>
+</div>
+
+
+        <header class="post-title container-fluid margin-topx2 text-center">
+            <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 margin-bottomx3 line-height-200">
+                <div class="h6"><a href="/ideas/equals-change-blog/">Equals Change Blog</a></div>
+                <h1 id="page-title" itemprop="name headline"><span lang="en">10 tech trends that will impact social justice in 2018</span></h1>
+            </div>
+        </header>
+    </div>
+
+    <div class="bkg-grey-lightest-blog" role="main" id="main-content">
+        <div class="blog-post-main container-fluid">
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author-img text-center">
+
+
+
+                    <div class="circular-img">
+<img itemprop="image" class="img-circle" alt="Wilneida Negron. New York. 2017. Photo credit: Simon Luethi &#169;Ford Foundation." title="Wilneida Negron. New York. 2017. Photo credit: Simon Luethi &#169;Ford Foundation." src="/media/3364/wilneida_negron_extended.jpg?crop=0.31831365348606711,0.067590373803020826,0.30928759277829088,0&amp;width=100&amp;height=100&amp;rnd=131735487210000000&amp;cropmode=percentage" data-src-retina="/media/3364/wilneida_negron_extended.jpg?crop=0.31831365348606711,0.067590373803020826,0.30928759277829088,0&amp;width=200&amp;height=200&amp;rnd=131735487210000000&amp;cropmode=percentage" />
+
+                    </div>
+                        <div class="blog-name-and-title">
+                            <p itemprop="name" class="name">
+                                    <span>Wilneida Negr&#243;n,</span>
+                                                                    <span itemprop="jobTitle" class="title">Former Technology Fellow, Gender, Racial, and Ethnic Justice</span>
+                            </p>
+                        </div>
+
+            </div>
+            <div class="h6 blog-post-date text-center extra-bottom-margin-to-match-top">
+                <time itemprop="datePublished" datetime="2018-03-21">21 March 2018</time>
+            </div>
+
+            <div itemprop="articleBody" class="line-height-200 margin-bottomx2 clearfix blog-post-wider-col" lang="en">
+
+                                <div class="rte col-xs-12" style="clear:both">
+<p><strong><em>Ford Foundation is helping develop a path for people to use their technology skills for the public good. Learn more about <a data-rel="noopener" href="https://www.fordfoundation.org/tech" target="_blank" title="Public Interest Tech">Public Interest Tech</a>.</em></strong></p>
+<p>The resilience and fragility of 2017 has been met with increased instability, polarization, and crackdowns on democratic principles in 2018. Still, activists around the world continue to push for the protection and expansion of human and civil rights. At the same time, technology continues to both support and undermine social justice, adding a layer of complexity for the field.</p>
+<p>Last year, I identified <a data-udi="umb://document/c0c77716061f41a09084bd3df6684c5c" href="/ideas/equals-change-blog/posts/10-tech-issues-that-will-impact-social-justice-in-2017/" title="10 tech issues that will impact social justice in 2017">10 tech trends impacting social justice</a>. Many will continue to pose challenges in 2018, and a new year brings new emerging threats and trends at the nexus of technology and social justice. Here are a few that stand out:</p>
+<h2 class="heading-serif">1. Increased digital privacy rights battles in the local, national, and global stage</h2>
+<p>Digital rights, including privacy protections and freedom of expression, are being fought at all levels of government. The <a data-rel="noopener" href="https://www.eugdpr.org/" target="_blank" title="EU General Data Protection Regulation">EU will soon implement new privacy laws</a> with implications for citizens around the world. While in the U.S., the <a data-rel="noopener" href="https://epic.org/amicus/location/carpenter/" target="_blank" title="Supreme Court Carpenter vs. US">Supreme Court Case Carpenter v. United States</a> is re-examining American rights to digital privacy and is considered one of the most important electronic privacy cases of the 21st century. The end of net neutrality has shifted to the state-level (California, New York, Oregon, Illinois, Maryland, Minnesota, Montana, New Jersey are at the forefront) where legislation is being sought to hold Internet Service Providers (ISPs) accountable for discriminatory practices. Each one of these fights will be critical to preserving digital rights.</p>
+<h2 class="heading-serif">2. Digital security becomes politically salient</h2>
+<p>2017 brought some of the largest data security breaches in the U.S., including Equifax, Yahoo, WannaCry, the voter data breach, and others. They demonstrated the severity of cybersecurity risks as well as governments’ and private sectors’ failure to protect citizens. With the threat of more state-sponsored cyber-attacks, voter data breaches, hackable online voting registration systems, and the U.S.’s first digital 2020 Census - the public may soon start demanding greater accountability and protections from governments and the private sector.</p>
+<h2 class="heading-serif">3. Increased focus on corporate online responsibility</h2>
+<p>Recent shifts in the online media ecosystem relying increasingly on bots, “filter bubbles”, and search engine manipulation, and growing cases of online harassment, bias, and disinformation have highlighted the vulnerabilities of democratic societies in the Digital Age. While there is a need to find technical, legal, and policy solutions to these growing socio-technical problems, technology companies will face increased pressure to work alongside civil society to monitor, prevent, and resolve these issues. Therefore, in 2018, shareholders and government regulators may usher in a new era of corporate online responsibility.</p>
+<h2 class="heading-serif">4. Critical look at civic engagement and power building in the Digital Age.</h2>
+<p>Technology has become essential to campaigning, electoral politics, social movements, and legislative change. Bernie Sander’s tech-driven Big Organizing, Indivisible, #KnockEveryDoor, Run For Something, and the Women’s March, #MeToo, #TimesUp, and #NiUnaMas, as well as many others, show how spaces for political change have also become incubators for tech innovation and prototyping. Yet, rather than embrace an era of ongoing innovation, in 2018 civil society may take a more critical look at the impact of these platforms and tech-driven civic engagement models for building and sustaining political power in the Digital Age. The upcoming midterm elections in the U.S. and critical presidential elections around the world in countries such as Egypt, Mexico, and Brazil this year, will provide opportunities to critically look at the role of political tech in electoral politics.</p>
+<h2 class="heading-serif">5. Greater transparency and accountability of government procurement of private sector technologies</h2>
+<p>Governments around the world are increasingly purchasing and relying on private sector tech-enabled and data-driven technologies. These technologies are being used for everything from welfare and benefits delivery to policing and sentencing and immigration and border enforcement. While these technologies may offer greater efficiency and effectiveness, they are also escalating surveillance and censorship in 2017. In 2018, we’ll continue to see technology solutions, data brokerage, and data analysis vendors selling new services and tools to government and the public sector - resulting in heightened focus on unveiling profit-seeking ventures in government procurement of private sector technologies. Meanwhile, city and state-level mobilizations working on passing legislation to increase the transparency of government procurement of technologies may offer key lessons for the field.</p>
+<h2 class="heading-serif">6. Heightened focus on data ownership and governance over automation and prediction systems</h2>
+<p>In 2018 we’ll see the expansion of automation and prediction through the use of predictive analytics, machine learning technologies, Internet of Things (IoT), and other intelligent infrastructures as well as increasing awareness of the vast private and public-sector ecosystems through which our personal data is collected, sold, and used by social media platforms, governments, and third-party companies. As a result, we’ll see a growing focus on data governance, including a greater need to define responsible data principles, rights and protections for vulnerable communities, and new systems to regulate data collection at the front end and its use on the backend.</p>
+<h2 class="heading-serif">7. An alternative, decentralized, and collaborative Internet</h2>
+<p>Two trends are currently merging with implications for the future of the Internet. Concerns abound about the end of net neutrality, profit-driven models of social media platforms, and online misinformation. At the same time groups are experimenting with ways to enable new models of local and decentralized forms of Internet and peer to peer (P2P) collaboratives through cryptocurrencies, like Bitcoin, and Blockchain. 2018 will see greater research and experimentation of how these technologies can provide alternatives to an increasingly centralized and monopolistic online environment.</p>
+<h2 class="heading-serif">8. Biometric technologies are mainstreamed and normalized</h2>
+<p>Biometric technologies such as facial recognition are currently used by governments around the world in policing, border and immigration enforcement, national identification systems, rural credit markets, and public service delivery. Most recently in the U.S., JetBlue and Delta tested facial recognition boarding and biometric exit immigration procedures. The seemingly innocuous ways that biometric technologies are being implemented in daily life are normalizing their practice and use, while avoiding the difficult questions of transparency, accountability, and data ownership and governance highlighted earlier.</p>
+<h2 class="heading-serif">9. Academia tackles question of AI for social good</h2>
+<p>Even though most organizations and companies are still in the early days of machine learning and artificial technologies (AI) implementation – private sector leaders and civil society groups are beginning to explore the risks and potential for social good of these technologies. In 2017, more and more academic institutions launched research centers focused on fostering cross-disciplinary explorations on the social implications of these technologies as well as developing policy proposals and industry-specific best practices to guide the use and deployment of them. In 2018, we’ll continue to see a growth in research in this space, as well as begin to see how policymakers and activists use this research.</p>
+<h2 class="heading-serif">10. Impact of technology on the labor market and the Future of Work</h2>
+<p>The growth of automation and digital platforms in the workforce and labor markets brings the promise of greater efficiency, productivity, and opportunity. Yet, the broader labor market realities (e.g. wage stagnation, fissuring, inequality, immigration) in which these technologies are deployed must be closely examined. Helping societies adapt to the changing nature of work will require multi-stakeholder engagements among policymakers, researchers, technology firms, civil society, and the general public. These areas of work are starting to be defined and in 2018 we may see the beginnings of key policy proposals.</p>
+<p><em>A special thanks to my colleagues, Alberto Cerda, Ritse Erumi, and Michelle Shevin whose suggestions and guidance made this list possible.</em></p>                </div>
+
+
+                <div class="col-xs-12 post-topics margin-bottomx4">
+                        <div class="rule h6">Topics</div>
+                        <ul itemprop="keywords" class="list-unstyled list-inline topic keywords">
+                                        <li><a itemprop="url" href="/ideas/equals-change-blog/by-topic/internet-and-technology/">Internet and Technology, </a></li>
+                                        <li><a itemprop="url" href="/ideas/equals-change-blog/by-topic/human-rights/">Human Rights</a></li>
+
+                        </ul>
+                </div>
+
+            </div>
+<div itemprop="comment" itemscope itemtype="http://schema.org/UserComments" class="disqus clearfix">
+    <div class="disqus-container">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+         var disqus_shortname = "fordfoundationblog";
+         var disqus_identifier = "10953";
+         var disqus_url = "https://www.fordfoundation.org/ideas/equals-change-blog/posts/10-tech-trends-that-will-impact-social-justice-in-2018/";
+         var disqus_title = "10 tech trends that will impact social justice in 2018";
+         (function () {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();
+        </script>
+    </div>
+</div>
+        </div>
+    </div>
+        <div class="bkg-grey-lighter" role="complementary">
+
+            <div class="container-fluid region-more">
+
+                <div class="row">
+                    <div class="text-center margin-topx6 margin-bottomx5">
+                        <h2 class="serif lang-english language-option">More About This Topic</h2>
+                    </div>
+                </div>
+                <div class="row tile-container" data-columns>
+
+                    
+
+<div itemscope itemtype="http://schema.org/BlogPosting" class="card-more-image">
+    <div class="border-wrapper">
+        <a title="Miguel Chateloin and Lazaro Gamio use their computers to write code during the Hackathon for Cuba. Photo credit: Getty Images" href="/ideas/equals-change-blog/posts/10-tech-issues-that-will-impact-social-justice-in-2017/">
+            <span class="sr-only">Miguel Chateloin and Lazaro Gamio use their computers to write code during the Hackathon for Cuba. Photo credit: Getty Images</span>
+            <div class="card-img" style="background-image: url(/media/3224/gettyimages-466343169_web.jpg?crop=0.0000000000000001263187085796,0.00814814814814815,0,0.075185185185185133&width=800&height=400&rnd=131755639360000000&cropmode=percentage)" data-src-retina="/media/3224/gettyimages-466343169_web.jpg?crop=0.0000000000000001263187085796,0.00814814814814815,0,0.075185185185185133&width=1600&height=800&rnd=131755639360000000&cropmode=percentage">
+                <meta itemprop="image" content="https://www.fordfoundation.org/media/3224/gettyimages-466343169_web.jpg?crop=0.0000000000000001263187085796,0.00814814814814815,0,0.075185185185185133&amp;width=1600&amp;height=800&amp;rnd=131755639360000000&amp;cropmode=percentage" />
+            </div>
+        </a>
+        
+
+    <meta itemprop="headline" content="10 tech issues that will impact social justice in 2017" />
+    <meta itemprop="image" content="https://www.fordfoundation.org/media/3224/gettyimages-466343169_web.jpg?crop=0.0000000000000001263187085796,0.00814814814814815,0,0.075185185185185133&amp;width=1600&amp;height=800&amp;rnd=131755639360000000&amp;cropmode=percentage" />
+    <div itemscope itemtype="http://schema.org/Organization" itemprop="publisher">
+        <meta itemprop="name" content="Ford Foundation" />
+        <div itemscope itemtype="http://schema.org/ImageObject" itemprop="logo">
+            <meta itemprop="url" content="https://www.fordfoundation.org/assets/img/ford-logo_265.png" />
+        </div>
+    </div>
+        <div itemscope itemtype="http://schema.org/Person" itemprop="author">
+
+            <meta itemprop="name" content="Wilneida Negr&#243;n" />
+        </div>
+
+        <div class="card-body">
+                <div class="h6">
+                            <a class="card-text-contenttype" href="/ideas/equals-change-blog/">
+            Equals Change Blog
+        </a>
+
+                        <time class="card-date" itemprop="datePublished" datetime="2017-01-12">12 January 2017</time>
+                </div>
+                <div itemprop="name headline" class="h4">
+                    <a itemprop="url" href="/ideas/equals-change-blog/posts/10-tech-issues-that-will-impact-social-justice-in-2017/">10 tech issues that will impact social justice in 2017</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<div itemscope itemtype="http://schema.org/BlogPosting" class="card-more-image">
+    <div class="border-wrapper">
+        <a title="A participant puts stickers on her laptop at the 28th Chaos Communication Congress in Berlin. Credit: Adam Berry / Stringer" href="/ideas/equals-change-blog/posts/why-you-should-care-about-bots-if-you-care-about-social-justice/">
+            <span class="sr-only">A participant puts stickers on her laptop at the 28th Chaos Communication Congress in Berlin. Credit: Adam Berry / Stringer</span>
+            <div class="card-img" style="background-image: url(/media/3378/gettyimages-136135718.jpg?crop=0.0380952380952381,0,0.10476190476190476,0&width=800&height=400&rnd=131755632300000000&cropmode=percentage)" data-src-retina="/media/3378/gettyimages-136135718.jpg?crop=0.0380952380952381,0,0.10476190476190476,0&width=1600&height=800&rnd=131755632300000000&cropmode=percentage">
+                <meta itemprop="image" content="https://www.fordfoundation.org/media/3378/gettyimages-136135718.jpg?crop=0.0380952380952381,0,0.10476190476190476,0&amp;width=1600&amp;height=800&amp;rnd=131755632300000000&amp;cropmode=percentage" />
+            </div>
+        </a>
+        
+
+    <meta itemprop="headline" content="Why you should care about bots if you care about social justice" />
+    <meta itemprop="image" content="https://www.fordfoundation.org/media/3378/gettyimages-136135718.jpg?crop=0.0380952380952381,0,0.10476190476190476,0&amp;width=1600&amp;height=800&amp;rnd=131755632300000000&amp;cropmode=percentage" />
+    <div itemscope itemtype="http://schema.org/Organization" itemprop="publisher">
+        <meta itemprop="name" content="Ford Foundation" />
+        <div itemscope itemtype="http://schema.org/ImageObject" itemprop="logo">
+            <meta itemprop="url" content="https://www.fordfoundation.org/assets/img/ford-logo_265.png" />
+        </div>
+    </div>
+        <div itemscope itemtype="http://schema.org/Person" itemprop="author">
+
+            <meta itemprop="name" content="Wilneida Negr&#243;n" />
+        </div>
+
+        <div class="card-body">
+                <div class="h6">
+                            <a class="card-text-contenttype" href="/ideas/equals-change-blog/">
+            Equals Change Blog
+        </a>
+
+                        <time class="card-date" itemprop="datePublished" datetime="2017-05-30">30 May 2017</time>
+                </div>
+                <div itemprop="name headline" class="h4">
+                    <a itemprop="url" href="/ideas/equals-change-blog/posts/why-you-should-care-about-bots-if-you-care-about-social-justice/">Why you should care about bots if you care about social justice</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<div itemscope itemtype="http://schema.org/BlogPosting" class="card-more-image">
+    <div class="border-wrapper">
+        <a title="Individuals working on laptops - Illustration by Conrad Kochek" href="/ideas/equals-change-blog/posts/technology-and-social-justice-meet-our-tech-fellows/">
+            <span class="sr-only">Individuals working on laptops - Illustration by Conrad Kochek</span>
+            <div class="card-img" style="background-image: url(/media/3592/technologists-for-social-justice.jpg?crop=0.064761904761904757,0,0.078095238095238093,0&width=800&height=400&rnd=131562765770000000&cropmode=percentage)" data-src-retina="/media/3592/technologists-for-social-justice.jpg?crop=0.064761904761904757,0,0.078095238095238093,0&width=1600&height=800&rnd=131562765770000000&cropmode=percentage">
+                <meta itemprop="image" content="https://www.fordfoundation.org/media/3592/technologists-for-social-justice.jpg?crop=0.064761904761904757,0,0.078095238095238093,0&amp;width=1600&amp;height=800&amp;rnd=131562765770000000&amp;cropmode=percentage" />
+            </div>
+        </a>
+        
+
+    <meta itemprop="headline" content="Technology and social justice: Meet our tech fellows" />
+    <meta itemprop="image" content="https://www.fordfoundation.org/media/3592/technologists-for-social-justice.jpg?crop=0.064761904761904757,0,0.078095238095238093,0&amp;width=1600&amp;height=800&amp;rnd=131562765770000000&amp;cropmode=percentage" />
+    <div itemscope itemtype="http://schema.org/Organization" itemprop="publisher">
+        <meta itemprop="name" content="Ford Foundation" />
+        <div itemscope itemtype="http://schema.org/ImageObject" itemprop="logo">
+            <meta itemprop="url" content="https://www.fordfoundation.org/assets/img/ford-logo_265.png" />
+        </div>
+    </div>
+        <div itemscope itemtype="http://schema.org/Person" itemprop="author">
+
+            <meta itemprop="name" content="Michael Brennan" />
+        </div>
+
+        <div class="card-body">
+                <div class="h6">
+                            <a class="card-text-contenttype" href="/ideas/equals-change-blog/">
+            Equals Change Blog
+        </a>
+
+                        <time class="card-date" itemprop="datePublished" datetime="2017-11-14">14 November 2017</time>
+                </div>
+                <div itemprop="name headline" class="h4">
+                    <a itemprop="url" href="/ideas/equals-change-blog/posts/technology-and-social-justice-meet-our-tech-fellows/">Technology and social justice: Meet our tech fellows</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+
+                <div class="col-sm-4 col-sm-offset-4">
+                </div>
+
+            </div>
+        </div>
+</article>
+  
+<footer class="footer-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-4 col-lg-3 padding-topx3">
+                <h2 class="h6">CONNECT</h2>
+                <div class="footer-icons">
+                    <a href="https://twitter.com/FordFoundation" target="blank" title="Ford Foundation on Twitter" tabindex="0">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>Twitter</title>
+        <g class="icon">
+            <g class="twitter">
+                <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm8,13c0,.16,0,.33,0,.49a10.9,10.9,0,0,1-11,11,10.75,10.75,0,0,1-5.89-1.74,6.9,6.9,0,0,0,.92.05,7.72,7.72,0,0,0,4.79-1.65,3.84,3.84,0,0,1-3.6-2.68,3.55,3.55,0,0,0,.73.08,3.73,3.73,0,0,0,1-.14,3.85,3.85,0,0,1-3.09-3.78v0a3.8,3.8,0,0,0,1.74.48A3.84,3.84,0,0,1,12,15.8a3.88,3.88,0,0,1,.52-1.94,10.92,10.92,0,0,0,8,4,3.65,3.65,0,0,1-.1-.88,3.86,3.86,0,0,1,3.85-3.86A3.8,3.8,0,0,1,27,14.38a8,8,0,0,0,2.45-.94,3.89,3.89,0,0,1-1.7,2.14A8.09,8.09,0,0,0,30,15,8.15,8.15,0,0,1,28,17Z" />
+            </g>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a>
+                    <a href="https://facebook.com/pages/Ford-Foundation/132732160104163?rf=108185902542536" target="blank" title="Ford Foundation on Facebook" tabindex="0">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>Facebook</title>
+        <g class="icon">
+            <g class="facebook">
+                <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4Zm4.6,16.7h-4V31.3h-4V20.7H13.8V16.9h2.8V13.6c0-2.6,1.7-4.9,5.5-4.9a18.76,18.76,0,0,1,2.7.2l-.1,3.6H22.3c-1.4,0-1.6.6-1.6,1.7V17h4.2Z"></path>
+            </g>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a>
+                    <a href="http://www.linkedin.com/company/ford-foundation" target="blank" title="Ford Foundation on Linked In" tabindex="0">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>LinkedIn</title>
+        <g class="icon linkedin">
+            <path d="M20,4A16,16,0,1,0,36,20,16,16,0,0,0,20,4ZM15.7,28.3H11.5V15.8h4.2ZM13.6,14a2.18,2.18,0,0,1-2.3-2.2,2.21,2.21,0,0,1,2.4-2.2A2.13,2.13,0,0,1,16,11.8,2.16,2.16,0,0,1,13.6,14ZM30.7,28.3H26.5V21.6c0-1.7-.6-2.8-2.1-2.8a2.33,2.33,0,0,0-2.1,1.5,3.08,3.08,0,0,0-.1,1v7H18s.1-11.3,0-12.5h4.2v1.8A4.09,4.09,0,0,1,26,15.5c2.7,0,4.8,1.8,4.8,5.6Z"></path>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a>
+                    <a href="https://www.youtube.com/user/fordfoundationTV" target="blank" title="Ford Foundation on YouTube" tabindex="0">    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <title>YouTube</title>
+        <g class="icon youtube">
+            <path d="M17.88,17.07l5.4,2.83-5.4,2.94ZM36,20A16,16,0,1,1,20,4,16,16,0,0,1,36,20Zm-5.84-.78a30.47,30.47,0,0,0-.2-3.31,4.44,4.44,0,0,0-.81-2,2.86,2.86,0,0,0-2-.86C24.27,12.8,20,12.8,20,12.8h0s-4.27,0-7.11.21a2.86,2.86,0,0,0-2,.86,4.44,4.44,0,0,0-.81,2c-.12,1.1-.19,2.2-.2,3.31v1.55a30.65,30.65,0,0,0,.2,3.32,4.44,4.44,0,0,0,.81,2,3.44,3.44,0,0,0,2.2.95c1.63.16,6.91.21,6.91.21s4.27,0,7.11-.21a2.91,2.91,0,0,0,2-.87,4.44,4.44,0,0,0,.81-2c.12-1.1.19-2.21.2-3.32Z"></path>
+        </g>
+        <g class="border">
+            <path d="M20,1.5A18.5,18.5,0,1,1,1.5,20,18.52,18.52,0,0,1,20,1.5M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z"></path>
+        </g>
+    </svg>
+</a>
+                </div>
+                        <div class="visible-xs">
+            <div class="rule margin-topx5 margin-bottomx3"></div>
+        </div>
+        <h2 class="h6 padding-topx3 ">CAREERS</h2>
+        <span class="small sans careers">Learn about <a target="_self" href="/about/careers/">Careers</a>, view <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/FordFoundationCareerPage">Current openings</a>, and <a target="_self" href="https://fordfoundation.wd1.myworkdayjobs.com/en-US/FordFoundationCareerPage/job/Join-Our-Talent-Pool_R531">Join our talent pool</a></span>
+
+                        <div class="visible-xs">
+            <div class="rule margin-topx5 margin-bottomx3"></div>
+        </div>
+        <h2 class="h6 padding-topx3 ">PRESS ROOM</h2>
+        <span class="small sans careers">Visit the <a target="_self" href="/press-room/">Press Room</a></span>
+
+            </div>
+            <div class="col-xs-12 visible-xs">
+                <div class="rule margin-topx5 margin-bottomx3"></div>
+            </div>
+
+            
+            <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6 padding-topx3">
+                <h2 class="h6 contact">CONTACT</h2>
+                <div class="row" itemscope itemtype="http://schema.org/Organization">
+                        <meta itemprop="name" content="Ford Foundation" />
+                        <div class="col-xs-7 col-md-12 col-lg-6 padding-bottom-small">
+                            <div class="office-address">
+                                <p>Ford Foundation Center for Social Justice<br />320 E 43rd St<br />New York, NY 10017<br />USA</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-12 col-lg-6">
+                            <p itemprop="telephone" class="hidden-xs office-telephone">Tel. (+1) 212-573-5000</p>
+                                <div>
+                                    <a href="/about/the-ford-foundation-center-for-social-justice/visitor-information/" tabindex="0"><span class="directions small sans">Visitor information</span></a>
+                                    <br>
+                                </div>
+                                                            <div>
+                                    <a href="/about/the-ford-foundation-center-for-social-justice/accessibility/" tabindex="0"><span class="directions small sans">Accessibility</span></a>
+                                    <br>
+                                </div>
+
+                            <a href="/about/about-ford/#regional-offices" tabindex="0"><span class="small sans">Regional offices</span></a>
+                        </div>
+
+                    <div class="col-xs-12 visible-xs footer-number-directions" aria-hidden="true">
+                        <div class="row">
+                                <div class="col-xs-12 padding-bottomx3">
+                                    <button type="button" class="btn btn-primary" tabindex="-1">(+1) 212-573-5000</button>
+                                </div>
+                        </div>
+                    </div>
+
+                        <div class="col-xs-12 padding-bottomx2">
+                                <div class="visible-xs rule margin-topx3 margin-bottomx3"></div>
+                                <h2 class="h6 padding-topx2">Event spaces</h2>
+                                                            <span class="small sans grey-light"><a href="https://www.fordfoundation.org/about/the-ford-foundation-center-for-social-justice/event-spaces/">Learn how to book an event space</a></span>
+                        </div>
+                </div>
+            </div>
+            
+
+            <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-xs-12 visible-xs clearfix">
+                <div class="rule margin-topx3 margin-bottomx3"></div>
+            </div>
+
+            <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-3 padding-topx3 email-update">
+                
+
+
+<form action="/umbraco/Surface/Email/ShortSignup" class="form-group animated-label-form" method="post">            <div class="rte email-signup-header">
+                <h2 class="h6">SIGNUP FOR E-MAIL UPDATES</h2>
+            </div>
+<input id="Footer_SuccessMessageOverrideFooter" name="Footer.SuccessMessageOverride" type="hidden" value="" /><input id="Footer_SubscriptionFooter" name="Footer.Subscription" type="hidden" value="" /><div class='signup-name-group'>        <div class="formpadding signup-first-name animated-label ">
+            <input aria-label="Email signup enter first name" class="form-control empty" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of &#39;500&#39;." data-val-maxlength-max="500" data-val-required="First name required" id="FirstNameFooter" name="Footer.FirstName" tabindex="0" type="text" value="" />
+<label for="FirstNameFooter">First Name</label>            <span class="field-validation-valid red" data-valmsg-for="Footer.FirstName" data-valmsg-replace="true" id="FirstNameFooter-error"></span>
+        </div>
+        <div class="formpadding signup-last-name animated-label ">
+            <input aria-label="Email signup enter last name" class="form-control empty" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of &#39;500&#39;." data-val-maxlength-max="500" data-val-required="Last name required" id="LastNameFooter" name="Footer.LastName" tabindex="0" type="text" value="" />
+
+<label for="LastNameFooter">Last Name</label>
+            <span class="field-validation-valid red" data-valmsg-for="Footer.LastName" data-valmsg-replace="true" id="LastNameFooter-error"></span>
+        </div>
+</div>            <div class="formpadding signup-email animated-label ">
+                <input aria-label="Email signup enter email" class="form-control empty" data-val="true" data-val-email="Please enter a valid email address" data-val-maxlength="The field E-mail must be a string or array type with a maximum length of &#39;500&#39;." data-val-maxlength-max="500" data-val-required="Email required" id="EmailFooter" name="Footer.Email" tabindex="0" type="text" value="" />
+<label for="EmailFooter">E-mail</label>                <span class="field-validation-valid red" data-valmsg-for="Footer.Email" data-valmsg-replace="true" id="EmailFooter-error"></span>
+            </div>
+        <div class="subscription-slider col-xs-12 margin-bottom">
+            
+            <a href="/e-mail-updates/" tabindex="0">More Subscription Options</a>
+        </div>
+        <div class="signup-submit-and-options">
+            <div class="col-xs-5 col-sm-4 no-padding">
+                <input type="submit" class="btn btn-default short-email-submit637299702630317704 email-submit" tabindex="0" aria-label="Submit email subscription form" value="Submit" />
+            </div>
+            <div class="col-xs-7 col-sm-8 ">
+                <button type="button" class="btn btn-default btn-block email-dont-show" tabindex="0" aria-label="Do not show email popup">Don't show<span class="hidden-xxs"> this</span> again</button>
+            </div>
+            <div class="col-xs-7 text-right footer-detail padding-top subscription-footer">
+                
+                <p>
+                    <a href="/e-mail-updates/" tabindex="0">Subscription options</a>
+                </p>
+            </div>
+        </div>
+        <div class="rte email-options subscription-gallery">
+            <p><a href="/e-mail-updates/" tabindex="0">Subscription options</a></p>
+        </div>
+        <script>
+      $(document).ready(function () {
+
+        var emailSliderSelector = '.email-slider';
+        var showingClass = 'slide-in';
+
+
+        $('#EmailFooter, #FirstNameFooter, #LastNameFooter').on('input change', function () {
+            var isEmpty = $(this).val() === '';
+            $(this).toggleClass('empty', isEmpty);
+        });
+
+        $('#EmailFooter, #FirstNameFooter, #LastNameFooter').trigger('change');
+
+        // Form submit
+        $('.short-email-submit637299702630317704').click(function (e) {
+            var $form = $(this).closest('form');
+            if ($form.valid()) {
+
+                //submit
+                e.preventDefault();
+                $.ajax({
+                    url: '/umbraco/Surface/Email/ShortSignup',
+                    type: 'POST',
+                    cache: false,
+                    data: $form.serialize(),
+                    success: function (response, status, xhr) {
+                        $form.parent().append(response);
+                        $form.remove();
+                        // Success will have a short response, failure has the full error validation messaging and form
+                        if (response.length < 200) {
+                            // Wait 3s and then close slider
+                            if ($(emailSliderSelector).length) {
+                                setTimeout(function () {
+                                    $(emailSliderSelector).removeClass(showingClass);
+                            }, 3000);
+                            }
+                      }
+                  },
+                  error: function (jqXHR, textStatus, errorThrown) {
+                      console.log(jqXHR + " " + textStatus + " " + errorThrown);
+                  }
+                });
+                FordFoundation.logEvent(_gaq, 'emailSignup', 'shortForm', 'Home');
+            }
+        });
+      });
+        </script>
+</form>
+
+            </div>
+        </div>
+
+        <div class="row footer-detail">
+            <div class="col-xs-12">
+                <div class="rule margin-topx3 margin-bottomx3"></div>
+            </div>
+            <div class="col-sm-7 col-md-6 col-lg-9">
+                <img src="/assets/img/cc-by.svg" class="cc-by opacity-low" alt="creative commons icon">
+                <span class="sr-only">Terms and Conditions of Use</span>
+
+                <p>All our content may be republished or reused for free, except for most photographs, illustrations, and videos.</p>
+
+                <ul class="list-unstyled list-inline margin-bottomx2">
+                        <li>
+                            <a href="/privacy/" tabindex="0">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-and-conditions-of-use/" tabindex="0">Terms and Conditions</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-md-6 col-lg-3 text-right">
+                <p>© 2020 Ford Foundation, some rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <div class="modal fade modal-editable in" id="content-grid-modal" tabindex="-1"
+         role="dialog" aria-label="Modal window" aria-hidden="true">
+    </div>
+
+    
+    
+
+    <script src="/DependencyHandler.axd?s=L3ZlbmRvci9zYWx2YXR0b3JlL3NhbHZhdHRvcmUubWluLmpzOy92ZW5kb3IvbWF0Y2hIZWlnaHQvanF1ZXJ5Lm1hdGNoSGVpZ2h0LW1pbi5qczsvdmVuZG9yL2pxdWVyeS5TY3JvbGxUby9qcXVlcnkuU2Nyb2xsVG8ubWluLmpzOy92ZW5kb3IvanF1ZXJ5LmxvY2FsU2Nyb2xsL2pxdWVyeS5sb2NhbFNjcm9sbC5taW4uanM7L3ZlbmRvci9ib290c3RyYXAtc2VsZWN0L2Rpc3QvanMvYm9vdHN0cmFwLXNlbGVjdC5qczsvc2NyaXB0cy9qcXVlcnkudmFsaWRhdGUubWluLmpzOy9zY3JpcHRzL0V2ZW50UmVjb3JkaW5nLmpzOy9zY3JpcHRzL2pxdWVyeS52YWxpZGF0ZS51bm9idHJ1c2l2ZS5taW4uanM7L3ZlbmRvci9vYmplY3QtZml0LWltYWdlcy9kaXN0L29maS5taW4uanM7L3ZlbmRvci9zdGlja3lmaWxsanMvZGlzdC9zdGlja3lmaWxsLm1pbi5qczsvc2NyaXB0cy9mb3JkZm91bmRhdGlvbi5qczs&amp;t=Javascript&amp;cdv=5022019"></script>
+    <script>
+      $(function () { 
+        objectFitImages();
+      });
+    </script>
+    <script>
+        (function () {
+            var sz = document.createElement('script');
+            sz.async = true;
+            sz.src = '//us1.siteimprove.com/js/siteanalyze_88815.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sz, s);
+        })();
+    </script>
+
+    <script>
+        var $mcGoal = { 'settings': { 'uuid': '3f89269c6132144b6f1c5ce78', 'dc': 'us10' } };
+        (function () {
+            var sp = document.createElement('script'); sp.async = true; sp.defer = true;
+            sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+        })();
+    </script>
+
+    <!-- Twitter universal website tag code -->
+    <script>
+        !function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'nvi7s');
+        twq('track', 'PageView');
+    </script>
+    <!-- End Twitter universal website tag code -->
+
+    <script>
+        /* SiteImprove tracking script */
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script'); sz.async = true;
+            sz.src = '//us1.siteimprove.com/js/siteanalyze_88815.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+    <!-- Hotjar Tracking Code for fordfoundation.org -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 115433, hjsv: 5 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
