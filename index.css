@@ -2,6 +2,37 @@ h1{
     color: darkgreen;
     text-align: center;
 }
-img{
-    ;
+.cta-button {
+    border-radius: 5px;
+    border: 1px solid #37a160fa;
+    padding: 1em 1.5em;
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 1em;
+    margin-bottom: 1em;
+    min-width: 5px;
+    transition: all 0.25s ease;
+    text-decoration: none;
 }
+.inner-container::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+footer, .cta-section {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
