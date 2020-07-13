@@ -36,3 +36,6 @@ footer, .cta-section {
     text-decoration: none;
     font-size: 17px;
   }
+  .inner-container {
+      text-align:center;
+  }
