@@ -1,7 +1,22 @@
 h1{
     color: darkgreen;
     text-align: center;
+    font-size: 4em;
 }
+<h5> {
+    font-style: bold;
+    font-weight ;
+}
+body{
+    background-color:rgba(125, 190, 216, 0.651);
+    display: block;
+    margin-left: auto;        
+    margin-right: auto;
+    width: 50%;
+    
+      }
+}
+
 .cta-button {
     border-radius: 5px;
     border: 1px solid #37a160fa;
@@ -21,7 +36,7 @@ h1{
     display: table;
 }
 footer, .cta-section {
-    text-align: center;
+    text-align: left;
     padding-top: 3em;
     padding-bottom: 4em;
 }
